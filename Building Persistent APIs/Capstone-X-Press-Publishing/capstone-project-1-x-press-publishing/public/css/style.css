@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.mobile {
+  display: none;
+}
+
+.App header {
+  padding: .75rem 0;
+  background-color: #2f2f2f;
+  text-align: center;
+}
+
+@media only screen and (max-width: 465px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+}
+
+.Landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  background-color: #f3f3f3;
+}
+
+.Landing h2 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 2.33;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+.Landing .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.Landing .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  word-break: break-word;
+  transition: .25s;
+}
+
+.Landing .item:hover {
+  opacity: 0.8;
+}
+
+.Landing .series .item {
+  width: 200px;
+  min-height: 200px;
+  border: 2px solid #2f2f2f;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.Landing .artist .item {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0;
+  width: 157px;
+  min-height: 157px;
+  background-color: #2f2f2f;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  color: #4aa7e2;
+}
+
+.Landing .item h3 {
+  display: inline-block;
+}
+
+.Landing .artist .item h3 {
+  margin-bottom: 1rem;
+}
+
+.Landing .button {
+  padding: .5rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #49a7e2;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: .25s;
+}
+
+.Landing .button:hover {
+  background-color: #72c2f5;
+}
+
+.Artist {
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+.Artist .description {
+  width: 80%;
+}
+
+.Artist h2 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.3px;
+  color: #4aa7e2;
+}
+
+.Artist h3 {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: 0.3px;
+}
+
+.Artist input {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.Artist .divider {
+  width: 100%;
+  margin: 1rem 0;
+  border: solid 1px #4aa7e2;;
+}
+
+.Artist textarea {
+  display: inline-block;
+  width: 60%;
+  padding: 1rem;
+  min-height: 200px;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 0.2px;
+}
+
+.Artist .button {
+  display: inline-block;
+  margin: .5rem;
+  border: 1px solid #ffffff;
+  padding: .5rem 1rem;
+  transition: .25s
+}
+
+.Artist .button:hover {
+  background-color: #4aa7e2;
+}
+
+.Artist .delete.button:hover {
+  background-color: #fb9b9b;
+}
+
+.Artist .button.inactive,
+.Artist .button.inactive:hover {
+  cursor: default;
+  background-color: grey;
+  opacity: .8;
+}
+
+.Series {
+  min-height: 100vh;
+  padding: 0 2rem;
+  background-color: #f3f3f3;
+}
+
+.Series .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.875rem;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+.Series .description input {
+  width: 80%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+}
+
+.Series .description h3 {
+  margin-bottom: .5rem;
+}
+
+.Series .description textarea {
+  width: 60%;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #2f2f2f;
+  margin-bottom: 1.75rem;
+}
+
+.Series .issue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 999px;
+  margin: auto;
+}
+
+.Series .issues {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Series .issue {
+  width: 250px;
+  padding: 1.375rem;
+  margin-left: .625rem;
+  margin-right: .625rem;
+  margin-bottom: 1.25rem;
+  background-color: #2f2f2f;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.Series .issue h3 {
+  font-weight: 600;
+  color: #4aa7e2;
+}
+
+.Series .button {
+  display: inline-block;
+  margin: .5rem .5rem 2rem .5rem;
+  border: 1px solid #ffffff;
+  padding: .5rem 1rem;
+  background-color: azure;
+  transition: .25s
+}
+
+.Series .issue .button:hover,
+.Series .button:hover {
+  background-color: #4aa7e2;
+}
+
+.Series .delete.button:hover {
+  background-color: #fb9b9b;
+}
+
+.Series .button.inactive,
+.Series .issue .button.inactive,
+.Series .button.inactive:hover {
+  cursor: default;
+  background-color: grey;
+  opacity: .8;
+}
+
+.Series .issue input {
+  width: 65%;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.Series .issue .button {
+  padding: .5rem;
+  margin: .5rem .25rem .25rem .25rem;
+  background-color: transparent;
+  font-size: .75rem;
+}

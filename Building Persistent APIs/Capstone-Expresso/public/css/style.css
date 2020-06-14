@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.button {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-radius: 67px;
+  margin-right: .33rem;
+  background-color: #7e5a61;
+  letter-spacing: 0.3px;
+  color: #fff;
+  transition: .25s
+}
+
+.button.inactive,
+.button.inactive:hover,
+.button.inactive,
+.button.inactive:hover {
+  cursor: default !important;
+  background-color: grey !important;
+  color: #f5f1ee !important;
+  opacity: .8 !important;
+}
+
+.delete.button {
+  background-color: #f35858 !important;
+  color: #f5f1ee !important;
+}
+
+.delete.button:hover {
+  background-color: #ca0505 !important;
+}
+
+.App header {
+  padding: .75rem 0;
+  border-bottom: solid 1px #979797;
+  background-color: #7e5a61;
+  text-align: center;
+}
+
+.Landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  background-color: #f3f3f3;
+}
+
+.Landing h2 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #7e5a61;
+}
+
+.Landing .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.Landing .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 157px;
+  min-height: 157px;
+  padding: 1rem;
+  border: 2px solid #2f2f2f;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  word-break: break-word;
+  font-size: 1.125rem;
+  transition: .25s;
+}
+
+.Landing .item:hover {
+  opacity: 0.8;
+}
+
+.Landing .menu .item {
+  background-color: #a78881;
+}
+
+.Landing .employee .item {
+  background-color: #c6a17e;
+}
+
+.Landing .item h3 {
+  display: inline-block;
+}
+
+.Landing .menu .item h3 {
+  margin-bottom: 1rem;
+}
+
+.Landing .button {
+  padding: .5rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border-radius: 67px;
+  background-color: #7e5a61;
+  transition: .25s;
+}
+
+.Landing .button:hover {
+  background-color: #ad9696;
+}
+
+.Menu {
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+  background-color: #f5f1ee;
+  text-align: center;
+}
+
+.Menu .button:last-child {
+  margin-right: 0;
+}
+
+.Menu .button:hover {
+  background-color: #ab888e;
+}
+
+.Menu .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.875rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+.Menu .title input {
+  width: 80%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+}
+
+.Menu .menu-item-container {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #7e5a61;
+  text-align: center;
+  color: #2f2f2f;
+  line-height: 1.71;
+  letter-spacing: 0.2px;
+}
+
+.Menu .menu-item-container .row {
+  display: flex;
+}
+
+.Menu .menu-item-container .header.row {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.Menu .menu-item-container .row:nth-child(odd) {
+  background-color: #c6a17e;
+}
+
+.Menu .row .item {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-right: solid 2px #7e5a61;
+}
+
+.Menu .row .item textarea {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+}
+
+.Menu .row .item input,
+.Menu .row .item textarea {
+  font-size: .875rem;
+}
+
+.Menu .row .item:last-child {
+  border-right: 0;
+}
+
+.Menu .row:nth-child(even) .button {
+  background-color: #c6a17e;
+  color: #f5f1ee;
+}
+
+.Menu .row:nth-child(odd) .button {
+  background-color: #f5f1ee;
+  color: #c6a17e;
+}
+
+.Menu .row:nth-child(even) .button:hover {
+  background-color: #906033;
+}
+
+.Menu .row:nth-child(odd) .button:hover {
+  background-color: #f7f2cf;
+}
+
+.Menu .add.button {
+  margin-top: 2rem;
+}
+
+.Employee {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #e5dcd4;
+  text-align: center;
+  line-height: 1.33;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.Employee h2 {
+  margin: 2rem 0;
+  color: #7e5a61;;
+}
+
+.Employee .strong,
+.Employee .strong input {
+  font-weight: 600;
+}
+
+.Employee .box {
+  background-color : #a78881;
+}
+
+.Employee p {
+  margin-bottom: .5rem;
+}
+
+.Employee input {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.Employee .button {
+  margin-top: 1rem;
+  background-color: #f5f1ee;
+  color: #a78881;
+  font-size: .875rem;
+}
+
+.Employee .employee {
+  padding: 1rem;
+  text-align: left;
+}
+
+.Employee .timesheet-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 999px;
+  margin: auto;
+}
+
+.Employee .timesheet {
+  width: 250px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.Employee .timesheet input {
+  width: 60px;
+  text-align: center;
+}

@@ -1,0 +1,148 @@
+body {
+  font-family: Poppins;
+  color: #ffffff;
+  background-color: #9cd1d6;
+  text-align: center;
+  line-height: 1.38;
+  letter-spacing: 0.4px;
+}
+
+#gold-medal-icon {
+  margin-top: 20px;
+}
+
+#title-line {
+  border-bottom: solid 5px #ffffff;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom:40px;
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  top: 30px;
+  display: inline-block;
+  background-color: #9cd1d6;
+  padding: 0px 20px;
+}
+
+#country-search {
+ margin-right: 15px;
+ display:inline-block;
+}
+
+#country-search-input {
+ width: 250px;
+ height: 36px;
+ border-radius: 3px;
+ padding-left:50px;
+ border: solid 1px #cecccf;
+ font-family: Work Sans;
+ font-size: 18px;
+ font-weight: 500;
+ line-height: 1.0;
+ letter-spacing: 0.4px;
+ padding-top:10px;
+ text-align: left;
+ color: #4f4f4f;
+}
+
+#magnifying-glass {
+  position:relative;
+  top:3px;
+  left:35px;
+}
+
+#search {
+  display: block;
+  padding: 32px 0;
+}
+
+#container {
+  background-color: #ffffff;
+  color: #000000;
+  width: 65%;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+#country-header th {
+  background: #c8f1f5;
+  padding-top: 18px;
+}
+
+td, th {
+  padding-top: 10px;
+}
+
+th, .table-descriptor {
+  font-size:14px;
+}
+
+td.table-value {
+  color: #7a797a;
+  font-size: 16px;
+  font-family: Work Sans;
+  height: 19px;
+  letter-spacing: 0.4px;
+}
+
+tr {
+  height: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f4f5;
+}
+
+#country-search-button {
+  width: 146px;
+  height: 45px;
+  border-radius: 54px;
+  background-color: #9cd1d6;
+  font-family: Work Sans;
+  line-height: 1.13;
+  font-size: 15px;
+  border: none;
+  color: #ffffff;
+}
+
+.subheader {
+  height: 50px;
+  background-color: #c8f1f5;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #000000;
+  padding-top:10px
+}
+
+.gold-medal-table th:nth-child(-n+3) {
+  width:15%;
+}
+
+.gold-medal-table th:nth-child(n+4) {
+  width:20%;
+}
+
+@media (max-width: 750px) {
+  #title-line {
+    width:90%;
+  }
+
+  #container {
+    width: 95%;
+  }
+}
+
+.sort, .country-link * {
+  cursor:pointer;
+}

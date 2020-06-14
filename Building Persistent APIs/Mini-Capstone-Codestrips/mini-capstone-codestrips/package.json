@@ -1,0 +1,21 @@
+{
+  "name": "cc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "chai": "^4.1.2",
+    "express": "^4.15.4",
+    "mocha": "^3.5.3",
+    "morgan": "^1.8.2",
+    "sqlite3": "^3.1.11",
+    "structured": "git+https://github.com/RyzacInc/structuredjs.git",
+    "supertest": "^3.0.0"
+  }
+}

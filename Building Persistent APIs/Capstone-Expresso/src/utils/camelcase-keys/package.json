@@ -1,0 +1,137 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "camelcase-keys",
+        "scope": null,
+        "escapedName": "camelcase-keys",
+        "name": "camelcase-keys",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/doliner/Documents/Codecademy-dev/repos/workspaces/workspaces/build-apis-project-c1-x-press-publishing"
+    ]
+  ],
+  "_from": "camelcase-keys@latest",
+  "_id": "camelcase-keys@4.1.0",
+  "_inCache": true,
+  "_location": "/camelcase-keys",
+  "_nodeVersion": "7.8.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/camelcase-keys-4.1.0.tgz_1490923944820_0.6524056014604867"
+  },
+  "_npmUser": {
+    "name": "sindresorhus",
+    "email": "sindresorhus@gmail.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "camelcase-keys",
+    "scope": null,
+    "escapedName": "camelcase-keys",
+    "name": "camelcase-keys",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/camelcase-keys/-/camelcase-keys-4.1.0.tgz",
+  "_shasum": "214d348cc5457f39316a2c31cc3e37246325e73f",
+  "_shrinkwrap": null,
+  "_spec": "camelcase-keys",
+  "_where": "/Users/doliner/Documents/Codecademy-dev/repos/workspaces/workspaces/build-apis-project-c1-x-press-publishing",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/camelcase-keys/issues"
+  },
+  "dependencies": {
+    "camelcase": "^4.1.0",
+    "map-obj": "^2.0.0",
+    "quick-lru": "^1.0.0"
+  },
+  "description": "Convert object keys to camelCase",
+  "devDependencies": {
+    "ava": "*",
+    "matcha": "^0.7.0",
+    "xo": "*"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "214d348cc5457f39316a2c31cc3e37246325e73f",
+    "tarball": "https://registry.npmjs.org/camelcase-keys/-/camelcase-keys-4.1.0.tgz"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js"
+  ],
+  "gitHead": "983678a5a4f2aac93987159e53fd7b6d205969b9",
+  "homepage": "https://github.com/sindresorhus/camelcase-keys#readme",
+  "keywords": [
+    "map",
+    "obj",
+    "object",
+    "key",
+    "keys",
+    "value",
+    "values",
+    "val",
+    "iterate",
+    "camelcase",
+    "camel-case",
+    "camel",
+    "case",
+    "dash",
+    "hyphen",
+    "dot",
+    "underscore",
+    "separator",
+    "string",
+    "text",
+    "convert",
+    "deep",
+    "recurse",
+    "recursive"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "sindresorhus",
+      "email": "sindresorhus@gmail.com"
+    }
+  ],
+  "name": "camelcase-keys",
+  "optionalDependencies": {},
+  "readme": "# camelcase-keys [![Build Status](https://travis-ci.org/sindresorhus/camelcase-keys.svg?branch=master)](https://travis-ci.org/sindresorhus/camelcase-keys)\n\n> Convert object keys to camelCase using [`camelcase`](https://github.com/sindresorhus/camelcase)\n\n\n## Install\n\n```\n$ npm install --save camelcase-keys\n```\n\n\n## Usage\n\n```js\nconst camelcaseKeys = require('camelcase-keys');\n\ncamelcaseKeys({'foo-bar': true});\n//=> {fooBar: true}\n\ncamelcaseKeys({'foo-bar': true, nested: {unicorn_rainbow: true}}, {deep: true});\n//=> {fooBar: true, nested: {unicornRainbow: true}}\n```\n\n```js\nconst camelcaseKeys = require('camelcase-keys');\n\nconst argv = require('minimist')(process.argv.slice(2));\n//=> {_: [], 'foo-bar': true}\n\ncamelcaseKeys(argv);\n//=> {_: [], fooBar: true}\n```\n\n\n## API\n\n### camelcaseKeys(input, [options])\n\n#### input\n\nType: `Object`\n\nObject to camelCase.\n\n#### options\n\nType: `Object`\n\n##### exclude\n\nType: `string[]` `RegExp[]`<br>\nDefault: `[]`\n\nExclude keys from being camelCased.\n\n##### deep\n\nType: `boolean`<br>\nDefault: `false`\n\nRecurse nested objects and objects in arrays.\n\n\n## License\n\nMIT © [Sindre Sorhus](https://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/camelcase-keys.git"
+  },
+  "scripts": {
+    "bench": "matcha bench/bench.js",
+    "test": "xo && ava"
+  },
+  "version": "4.1.0",
+  "xo": {
+    "overrides": [
+      {
+        "files": "bench/bench.js",
+        "rules": {
+          "import/no-unresolved": "off"
+        }
+      }
+    ]
+  }
+}

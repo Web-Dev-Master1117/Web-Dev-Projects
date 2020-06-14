@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codestrips</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Work+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+  <div class="container display-container">
+    <div class="title-text">Codestrips</div>
+    <img id="background" src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/bg1.svg">
+    <div class="codestrip-display">
+      <img id="head" src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/happy.svg" alt="head">
+      <img id="body" src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/body1.svg" alt="body">
+      <img id="bubble" src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/thought_bubble_1.svg" alt="thought bubble">
+      <div id="text"></div>
+    </div>
+  </div>
+  <div id="caption-container" class="container caption-container">
+    <div id="caption"></div>
+  </div>
+  <div class="container navigation-container">
+    <div id="left-arrow" class="arrow">
+      <img src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/arrow.svg" class="button"/>
+    </div>
+    <div id="navigation-label">Heads</div>
+    <div id="right-arrow" class="arrow">
+      <img src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/arrow.svg" class="button"/>
+    </div>
+  </div>
+  <div id="triple-selector" class="container selector-container">
+    <div class="selector button" id="selector-1">
+      <img src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/happy.svg" class="button" alt="selection-1" />
+    </div>
+    <div class="selector button" id="selector-2">
+        <img src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/sad.svg" class="button" alt="selection-2" />
+    </div>
+    <div class="selector button"  id="selector-3">
+        <img src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/projects/build-apis-mini-capstone-project/img/angry.svg" class="button" alt="selection-3" />
+    </div>
+  </div>
+  <div id="textboxes" class="container selector-container invisible">
+    <div id="text-box">
+      <textarea id="text-input" type="text" maxlength="60"></textarea>
+    </div>
+  </div>
+  <div class="container save-container">
+    <div id="save-button" class="button">Save New Strip</div>
+  </div>
+  <div class="container saved-container">
+    <ul>
+      <li id="saved-label"><strong>Saved Strips</strong></li>
+      <li id="add-new" class="button">Reset to Defaults</li>
+    </ul>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

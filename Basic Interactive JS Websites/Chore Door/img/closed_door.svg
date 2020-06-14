@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="227px" viewBox="0 0 120 227" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-panel_example_1-copy-2" transform="translate(-19.000000, -305.000000)">
+            <g id="Group-3" transform="translate(19.000000, 305.000000)">
+                <rect id="Rectangle-3" fill="#8439F6" x="0" y="0" width="120" height="227"></rect>
+                <g id="noun_1258010_cc" transform="translate(10.000000, 10.000000)" fill-rule="nonzero" fill="#010165">
+                    <path d="M101,208 L101,0 L0,0 L0,208 L1.61858974,208 L101,208 Z M3.23717949,3.25355858 L97.7628205,3.25355858 L97.7628205,204.746441 L3.23717949,204.746441 L3.23717949,3.25355858 Z" id="Shape"></path>
+                    <path d="M85.5,112 C81.9106054,112 79,114.910605 79,118.5 C79,122.089395 81.9106054,125 85.5,125 C89.0893946,125 92,122.089395 92,118.5 C92,114.910605 89.0893946,112 85.5,112 Z M85.5,122.358797 C83.3685494,122.356156 81.643844,120.631451 81.6412028,118.5 C81.643844,116.368549 83.3685494,114.643844 85.5,114.641203 C87.6314506,114.643844 89.356156,116.368549 89.3587972,118.5 C89.356156,120.628809 87.6314506,122.356156 85.5,122.358797 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
