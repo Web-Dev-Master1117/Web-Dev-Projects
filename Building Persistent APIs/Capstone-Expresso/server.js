@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(errorHandler());
 app.use(morgan('dev'));
+app.use(express.static('./'));
 
 app.use('/api', apiRouter);
 

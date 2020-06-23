@@ -1,7 +1,11 @@
 {
   "name": "expresso",
   "version": "1.0.0",
-  "description": "",
+  "description": "Expresso is a inventory management web app.",
+  "engines": {
+    "node": "12.18.0"
+  },
+  "private": true,
   "main": "server.js",
   "scripts": {
     "test": "mocha"
@@ -9,8 +13,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chai": "^4.1.2",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "helmet": "^3.23.1",
     "mocha": "^6.1.4",
+    "morgan": "^1.10.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",

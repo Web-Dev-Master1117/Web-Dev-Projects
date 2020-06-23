@@ -1,8 +1,12 @@
 {
-  "name": "cc",
+  "name": "codestrips",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is focussed on using basics of express routes and routers",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.0"
+  },
+  "private": true,
   "scripts": {
     "test": "mocha"
   },
@@ -11,10 +15,14 @@
   "dependencies": {
     "body-parser": "^1.18.1",
     "chai": "^4.1.2",
-    "express": "^4.15.4",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "helmet": "^3.23.1",
     "mocha": "^3.5.3",
     "morgan": "^1.8.2",
-    "sqlite3": "^3.1.11",
+    "sqlite3": "^4.0.6",
     "structured": "git+https://github.com/RyzacInc/structuredjs.git",
     "supertest": "^3.0.0"
   }
